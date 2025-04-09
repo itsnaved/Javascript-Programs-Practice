@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guess the Number</title>
+</head>
+<body>
+    
+    <script>
+       function guessName(){
+        let random = Math.floor(Math.random() *10);
+
+        let num = parseInt( prompt("Guess number from 1 to 10"));
+        while(num !== random){
+            num = parseInt( prompt("Guess number from 1 to 10"));
+        }
+
+        if(num == random){
+            console.log("You have guessed");
+        }
+       }
+       guessName();
+        
+
+    </script>
+</body>
+</html>
